@@ -90,7 +90,7 @@ set(libprotoc_files
 )
 
 add_library(libprotoc ${libprotoc_files})
-target_link_libraries(libprotoc libprotobuf)
+target_link_libraries(libprotoc libprotobuf ${ZLIB_LIBRARIES} ${SYSTEM_LIBRARIES})
 set_target_properties(libprotoc PROPERTIES
     COMPILE_DEFINITIONS LIBPROTOC_EXPORTS
     OUTPUT_NAME ${LIB_PREFIX}protoc)
