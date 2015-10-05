@@ -134,4 +134,4 @@ if (BUILD_TESTING)
   include(tests.cmake)
 endif (BUILD_TESTING)
 
-include(install.cmake)
+#include(install.cmake)
